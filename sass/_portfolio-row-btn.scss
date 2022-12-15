@@ -1,0 +1,21 @@
+/* кнопки-переключатели*/
+
+.row-btn {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-h3);
+    border: none;
+    display: block;
+}
+
+.row-btn:hover,
+.row-btn:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: var(--brand-color2);
+    background-color: var(--hoover-color);
+}

@@ -1,0 +1,91 @@
+/*преимущества список 2-ой блок, шапку не считаю**/
+
+.advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantage-icon {}
+
+.advantage-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.advantage-list-li {
+    // width: 270px;
+    // height: 120px;
+    flex: 1 1 calc(25% - 90px);
+}
+
+.wrap-icon {
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Переваги в css спрячем h2*/
+
+.hide {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+/*список преимуществ, 2-ой блок, шапку не считаю*/
+
+.advantage-tittle {
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-h2);
+    margin-top: 30px;
+}
+
+.advantage-link {
+    margin-left: 100px;
+}
+
+.advantage-p {
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: var(--color-description);
+}
+
+@media (max-width: 968px) {
+    .advantage {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .advantage-list {
+        flex-wrap: wrap;
+    }
+    
+    .advantage-list-li {
+        flex: 1 1 calc(50% - 90px);
+    }
+}
+
+@media (max-width: 480px) {
+    .advantage-list-li {
+        flex: 100%;
+    }
+}

@@ -1,0 +1,235 @@
+footer {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.span-logo2parr-footer {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    letter-spacing: 0.03em;
+    color: var(--brand-color2);
+}
+
+address {
+    font-style: normal;
+}
+
+footer li {
+    padding-top: 9px;
+}
+
+.footer-adress {
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: var(--brand-color2);
+}
+
+.footer-contact {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 0;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.footer-contact:hover {
+    color: var(--hoover-color);
+}
+
+.footer-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.team-social-icon {
+    fill: #ececec;
+}
+
+.footer-social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background: var(--color-icon-bg-hover);
+}
+
+.footer-icon-li {
+    padding-top: 0;
+    width: 44px;
+    height: 44px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-social {
+    margin-left: 70px;
+}
+
+.p-form {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+form {
+    display: flex;
+    gap: 12px;
+}
+
+.input-form {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-left: 16px;
+    color: #757575;
+}
+
+.btn-form {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--color-icon-bg-hover);
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-left: 28px;
+    cursor: pointer;
+}
+
+.btn-svg-form {
+    fill: #fff;
+    margin: 13px 28px 13px 10px;
+}
+
+.wrap-form {
+    margin-left: 93px;
+}
+
+.wrap-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.input-form:focus+.label-form {
+    transform: translateY(-50px);
+}
+
+@media (max-width: 968px) {
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 76px;
+    }
+    .logo-footer {
+        text-align: center;
+    }
+    .footer-social {
+        margin: 0;
+        text-align: center;
+    }
+    .wrap-flex {
+        flex-direction: column;
+    }
+    .wrap-form {
+        margin: 60px auto 0px auto;
+        text-align: center;
+    }
+    .btn-form {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px 0px;
+    }
+    .logo-footer {
+        margin: 0px auto;
+    }
+    .footer-social {
+        margin: 60px auto;
+    }
+    .wrap-form {
+        margin: 0px auto;
+    }
+    .wrap-flex {
+        flex-direction: column;
+    }
+    form {
+        flex-direction: column;
+    }
+    .btn-form {
+        width: 200px;
+        margin: 0 auto;
+        width: 200px;
+    }
+    .mobile-menu-close {
+        padding-right: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    .wrap-label {
+        margin: 0;
+    }
+    .input-form {
+        padding: 0;
+        width: 290px;
+    }
+}

@@ -1,0 +1,251 @@
+                            .backdrop {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                background: rgba(0, 0, 0, 0.2);
+                            }
+                            /*-----------------скроем модалку-------------------------------*/
+                            
+                            .backdrop.is-hidden {
+                                opacity: 0;
+                                pointer-events: none;
+                                /*-----------------через него можно клацать другое-------------------------------*/
+                            }
+                            
+                            .modal {
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                                min-height: 581px;
+                                min-width: 528px;
+                                background-color: #ffffff;
+                                top: 50%;
+                                left: 50%;
+                                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                                border-radius: 4px
+                            }
+                            
+                            .wrap-btn-modal {
+                                right: -94%;
+                                top: 5px;
+                                position: relative;
+                            }
+                            
+                            .modal-btn {
+                                position: absolute;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                height: 30px;
+                                border-radius: 50%;
+                                background: #FFFFFF;
+                                border: 1px solid rgba(0, 0, 0, 0.1);
+                                right: 8px;
+                                top: 8px;
+                                width: 30px;
+                            }
+                            
+                            .svg-modal:hover {
+                                fill: var(--color-icon-bg-hover);
+                            }
+                            
+                            .modal-p {
+                                position: absolute;
+                                padding: 10%;
+                            }
+                            
+                            .wrap-modal {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .subscribe-form {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                margin-left: auto;
+                                margin-right: auto;
+                                margin-bottom: 30px;
+                                width: 448px;
+                            }
+                            
+                            .modal {
+                                padding: 40px;
+                            }
+                            
+                            .tittle-modal {
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 12px;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 1.15;
+                                text-align: center;
+                            }
+                            
+                            .subscribe-form-field {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .subscribe-form-field-lust {
+                                margin-bottom: 20px;
+                            }
+                            
+                            .subscribe-form-field-placeholder {
+                                font-size: 12px;
+                                letter-spacing: 0.01em;
+                                color: #75757580;
+                            }
+                            
+                            .subscribe-form-field textarea,
+                            .subscribe-form-field input {
+                                transition: border-color 250ms;
+                                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                                outline: none;
+                            }
+                            
+                            .subscribe-form-field textarea:focus,
+                            .subscribe-form-field input:focus {
+                                border-color: var(--color-icon-bg-hover);
+                            }
+                            
+                            .subscribe-form-field:focus-within .subscribe-form-icon {
+                                fill: var(--color-icon-bg-hover);
+                            }
+                            
+                            .subscribe-form-field textarea {
+                                resize: none;
+                                border: 1px solid #21212133;
+                                border-radius: 4px;
+                                height: 120px;
+                                padding: 12px 16px;
+                            }
+                            
+                            .subscribe-form-field input {
+                                padding-left: 42px;
+                                padding-top: 14px;
+                                padding-bottom: 14px;
+                                padding-right: 15px;
+                                border: 1px solid #21212133;
+                                border-radius: 4px;
+                                height: 40px;
+                                width: 100%;
+                            }
+                            
+                            .subscribe-form-field label {
+                                font-size: 12px;
+                                font-weight: 400;
+                                line-height: 1.17;
+                                letter-spacing: 0.01em;
+                                margin-bottom: 4px;
+                                color: var(--color-description);
+                            }
+                            
+                            .subscribe-form-container-input-icon {
+                                position: relative;
+                            }
+                            
+                            .checkbox {
+                                margin-right: 7px;
+                                width: 16px;
+                                height: 15px;
+                                margin-bottom: 3px;
+                                accent-color: #2196F3;
+                            }
+                            
+                            .subscribe-form-icon {
+                                position: absolute;
+                                top: 50%;
+                                left: 5%;
+                                transform: translate(-50%, -50%);
+                            }
+                            
+                            .subscribe-form-text-conditions {
+                                display: inline-flex;
+                                height: 24px;
+                                align-items: center;
+                                color: var(--color-description);
+                            }
+                            
+                            .checkbox-icon-condotions {
+                                border-radius: 4px;
+                                border: 2px solid black;
+                                margin-right: 7px;
+                            }
+                            
+                            .checkbox:checked+.checkbox-icon-condotions {
+                                background-color: var(--color-icon-bg-hover);
+                                border-color: var(--color-bg-icon);
+                            }
+                            
+                            .subscribe-form-link-conditions {
+                                display: block;
+                                margin-left: 4px;
+                                color: var(--color-icon-bg-hover);
+                                text-decoration: underline;
+                            }
+                            
+                            .subscrib-button {
+                                background-color: var(--color-icon-bg-hover);
+                                margin-left: 120px;
+                                height: 50px;
+                                width: 200px;
+                                font-weight: 700;
+                                line-height: 1.88;
+                                letter-spacing: 0.06em;
+                                border: none;
+                                border-radius: 4px;
+                                color: #ffffff;
+                                cursor: pointer;
+                            }
+                            
+                            .subscrib-button:hover {
+                                background-color: #188CE8;
+                                box-shadow: 0px 4px 4px 0px #00000026;
+                            }
+                            
+                            @media (max-width: 968px) {
+                                .modal {
+                                    min-height: 648px;
+                                    min-width: 450px;
+                                }
+                            }
+                            
+                            @media (max-width: 480px) {
+                                .modal {
+                                    max-width: 450px;
+                                    height: 608px;
+                                }
+                                .subscribe-form {
+                                    width: 370px;
+                                }
+                                .subscribe-form-text-conditions {
+                                    font-size: 12px;
+                                }
+                                .subscrib-button {
+                                    margin: 0 auto;
+                                    display: block;
+                                }
+                            }
+                            
+                            @media (max-width: 320px) {
+                                .modal {
+                                    max-width: 290px;
+                                }
+                                .subscribe-form {
+                                    width: 220px;
+                                }
+                                .subscribe-form-text-conditions {
+                                    font-size: 12px;
+                                }
+                                .subscrib-button {
+                                    margin: 0 auto;
+                                    display: block;
+                                }
+                            }
