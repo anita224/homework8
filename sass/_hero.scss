@@ -1,102 +1,100 @@
-                                                            /*главный экран*/
-                                                            
+                                                        /*главный экран*/
+                                                        
+                                                        .hero {
+                                                            background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg\ hero.jpg);
+                                                            padding-top: 200px;
+                                                            padding-bottom: 200px;
+                                                            background-color: var(--background-color);
+                                                            max-width: 1600px;
+                                                            height: 600px;
+                                                            margin: 0 auto;
+                                                            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                                                                background-repeat: no-repeat;
+                                                            }
+                                                        }
+                                                        /*заголовок главный*/
+                                                        
+                                                        .hero-tittle {
+                                                            margin-bottom: 30px;
+                                                            font-weight: 900;
+                                                            font-size: 44px;
+                                                            line-height: 1.3636;
+                                                            text-align: center;
+                                                            letter-spacing: 0.06em;
+                                                            text-transform: uppercase;
+                                                            color: var(--brand-color2);
+                                                        }
+                                                        /*кнопка на гл.экране*/
+                                                        
+                                                        .btn-hero {
+                                                            display: block;
+                                                            margin-right: auto;
+                                                            margin-left: auto;
+                                                            padding: 10px 32px;
+                                                            font-family: inherit;
+                                                            font-style: normal;
+                                                            font-weight: 700;
+                                                            font-size: 16px;
+                                                            line-height: 1.875;
+                                                            color: var(--brand-color2);
+                                                            background: var(--hoover-color);
+                                                            border: none;
+                                                            border-radius: 4px;
+                                                        }
+                                                        
+                                                        .btn-hero a {
+                                                            color: #ffffff;
+                                                        }
+                                                        
+                                                        @media (max-width: 968px) {
                                                             .hero {
-                                                                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg\ hero.jpg);
-                                                                padding-top: 200px;
-                                                                padding-bottom: 200px;
-                                                                background-color: var(--background-color);
-                                                                max-width: 1600px;
-                                                                height: 600px;
-                                                                margin: 0 auto;
-                                                               
-                                                                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                                                                    background-repeat: no-repeat;
-                                                                }
+                                                                max-width: 100%;
+                                                                background-repeat: no-repeat;
                                                             }
-                                                            /*заголовок главный*/
-                                                            
+                                                        }
+                                                        
+                                                        @media (max-width: 768px) {
                                                             .hero-tittle {
-                                                                margin-bottom: 30px;
-                                                                font-weight: 900;
-                                                                font-size: 44px;
-                                                                line-height: 1.3636;
-                                                                text-align: center;
-                                                                letter-spacing: 0.06em;
-                                                                text-transform: uppercase;
-                                                                color: var(--brand-color2);
+                                                                font-size: 26px;
+                                                                line-height: 42px;
                                                             }
-                                                            /*кнопка на гл.экране*/
-                                                            
                                                             .btn-hero {
-                                                                display: block;
-                                                                margin-right: auto;
-                                                                margin-left: auto;
-                                                                padding: 10px 32px;
-                                                                font-family: inherit;
-                                                                font-style: normal;
-                                                                font-weight: 700;
-                                                                font-size: 16px;
-                                                                line-height: 1.875;
-                                                                color: var(--brand-color2);
-                                                                background: var(--hoover-color);
-                                                                border: none;
-                                                                border-radius: 4px;
+                                                                padding: 10px 24px;
                                                             }
-                                                            
-                                                            .btn-hero a {
-                                                                color: #ffffff;
+                                                            .hero {
+                                                                max-width: 768px;
+                                                                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-tab.jpg);
+                                                                background-repeat: no-repeat;
                                                             }
-                                                            @media (max-width: 968px){
-                                                                .hero{max-width:  100%;  
-                                                                    background-repeat: no-repeat;}
-                                                                
-                                                            }
-                                                            
-                                                            @media (max-width: 768px) {
-                                                                .hero-tittle {
-                                                                    font-size: 26px;
-                                                                    line-height: 42px;
-                                                                }
-                                                                .btn-hero {
-                                                                    padding: 10px 24px;
-                                                                }
-                                                                .hero {
-                                                                    max-width: 100%;
-                                                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-tab.jpg);
-                                                                    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                                                                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-tab2x.jpg);
-                                                                        background-repeat: no-repeat;
-                                                                    }
+                                                        }
+                                                        
+                                                        @media (max-width: 480px) {
+                                                            .hero {
+                                                                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/header-img-mob.jpg);
+                                                                padding-top: 118px;
+                                                                padding-bottom: 118px;
+                                                                max-width: 100%;
+                                                                height: 400px;
+                                                                background-size: cover;
+                                                                background-position: center;
+                                                                background-repeat: no-repeat;
+                                                                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                                                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-mob2x.jpg);
                                                                 }
                                                             }
-                                                            
-                                                            @media (max-width: 480px) {
-                                                                .hero {
-                                                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/header-img-mob.jpg);
-                                                                    padding-top: 118px;
-                                                                    padding-bottom: 118px;
-                                                                    max-width: 100%;
-                                                                    height: 400px;
-                                                                    background-size: cover;
-                                                                    background-position: center; 
-                                                                    background-repeat: no-repeat;
-                                                                    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                                                                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-mob2x.jpg);
-                                                                    }
+                                                        }
+                                                        
+                                                        @media (max-width: 320px) {
+                                                            .hero {
+                                                                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/header-img-mob.jpg);
+                                                                padding-top: 118px;
+                                                                padding-bottom: 118px;
+                                                                max-width: 100%;
+                                                                height: 400px;
+                                                                background-size: cover;
+                                                                background-position: center;
+                                                                @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                                                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-mob2x.jpg);
                                                                 }
                                                             }
-                                                            
-                                                            @media (max-width: 320px) {
-                                                                .hero {
-                                                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/header-img-mob.jpg);
-                                                                    padding-top: 118px;
-                                                                    padding-bottom: 118px;
-                                                                    max-width: 100%;
-                                                                    height: 400px;
-                                                                    background-size: cover;
-                                                                    background-position: center;
-                                                                    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                                                                        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-mob2x.jpg);
-                                                                    }
-                                                                }
-                                                            }
+                                                        }
