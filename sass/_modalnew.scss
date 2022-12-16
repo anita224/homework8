@@ -1,0 +1,218 @@
+/*-----------------------MODAL WINDOW-------------------------*/
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    transition: opacity 250ms;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+    border-radius: 4px;
+    background: var(--primary-white);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms;
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    color: black;
+    background: var(--primary-white);
+}
+
+.icon-close {
+    fill: currentColor;
+    transition: fill 250ms;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+    fill: var(--accent-color);
+}
+
+
+/*--------------MODAL WINDOW FORM---------------*/
+
+.request-form-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color-darkgrey);
+}
+
+.modal-field {
+    margin-bottom: 10px;
+}
+
+.request-label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: var(--text-color-grey);
+}
+
+.request-form-group {
+    position: relative;
+}
+
+.request-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    transition: outline var(--transition-time);
+}
+
+.request-form-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    display: inline-block;
+    transform: translateY(-50%);
+    fill: var(--text-color-darkgrey);
+    transition: fill var(--transition-time);
+}
+
+.request-input:focus {
+    outline: 1px solid var(--accent-color);
+}
+
+.request-input:focus+.request-form-icon {
+    fill: var(--accent-color);
+}
+
+.modal-field-comment {
+    margin-bottom: 20px;
+}
+
+.request-comment {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: 1px solid transparent;
+    transition: outline var(--transition-time);
+    cursor: pointer;
+    resize: none;
+}
+
+.request-comment:hover,
+.request-comment:focus {
+    outline: 1px solid var(--accent-color);
+}
+
+.request-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-field-policy {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.request-policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color-grey);
+}
+
+.request-policy span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--text-color-darkgrey);
+    border-radius: 2px;
+    margin-right: 8.38px;
+    fill: transparent;
+}
+
+.policy-checkbox:checked+.request-policy span {
+    background-color: var(--accent-color);
+    border: none;
+    fill: var(--primary-white);
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal!important;
+}
+
+a.policy {
+    color: var(--accent-color);
+}
+
+.request-send-btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-color);
+    color: var(--primary-white);
+    transition: color var(--transition-time), background-color var(--transition-time);
+}
+
+.request-send-btn:hover,
+.request-send-btn:focus {
+    color: var(--accent-color);
+    background-color: var(--primary-white);
+}

@@ -5,10 +5,12 @@
                                                                 padding-top: 200px;
                                                                 padding-bottom: 200px;
                                                                 background-color: var(--background-color);
-                                                                max-width: 100%;
+                                                                max-width: 1600px;
                                                                 height: 600px;
+                                                                margin: 0 auto;
+                                                               
                                                                 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-                                                                    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero-img2x-desktop.jpg);
+                                                                    background-repeat: no-repeat;
                                                                 }
                                                             }
                                                             /*заголовок главный*/
@@ -44,6 +46,11 @@
                                                             .btn-hero a {
                                                                 color: #ffffff;
                                                             }
+                                                            @media (max-width: 968px){
+                                                                .hero{max-width:  100%;  
+                                                                    background-repeat: no-repeat;}
+                                                                
+                                                            }
                                                             
                                                             @media (max-width: 768px) {
                                                                 .hero-tittle {
@@ -58,6 +65,7 @@
                                                                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-tab.jpg);
                                                                     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                                                                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-tab2x.jpg);
+                                                                        background-repeat: no-repeat;
                                                                     }
                                                                 }
                                                             }
@@ -70,7 +78,8 @@
                                                                     max-width: 100%;
                                                                     height: 400px;
                                                                     background-size: cover;
-                                                                    background-position: center;
+                                                                    background-position: center; 
+                                                                    background-repeat: no-repeat;
                                                                     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
                                                                         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header-img-mob2x.jpg);
                                                                     }
