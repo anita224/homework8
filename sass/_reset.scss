@@ -1,36 +1,36 @@
-/*сбрасываем*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-li,
-a {
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+                /*сбрасываем*/
+                
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6,
+                p ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+                
+                ul {
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                li,
+                a {
+                    text-decoration: none;
+                    list-style-type: none;
+                }
+                
+                .container {
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    margin: 0 auto;
+                    max-width: 1200px;
+                }
+                
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
