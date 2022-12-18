@@ -178,7 +178,7 @@
                             fill: var(--primary-white);
                         }
                         
-                        .visually-hidden {
+                        .request-form__checkbox visually-hidden {
                             border: 0;
                             clip: rect(1px, 1px, 1px, 1px);
                             -webkit-clip-path: inset(50%);
@@ -190,6 +190,11 @@
                             position: absolute;
                             width: 1px;
                             word-wrap: normal!important;
+                        }
+                        
+                        .request-form__policyLink {
+                            color: #2196F3;
+                            text-decoration: underline;
                         }
                         
                         a.policy {
@@ -220,6 +225,109 @@
                             background-color: var(--primary-white);
                         }
                         
+                        .modal-form-checkbox {
+                            position: absolute;
+                            width: 1px;
+                            height: 1px;
+                            margin: -1px;
+                            border: 0;
+                            padding: 0;
+                            flex-shrink: 0;
+                            clip: rect(0 0 0 0);
+                            overflow: hidden;
+                            border-radius: 2px;
+                        }
+                        
+                        .modal-form-custom-checkbox {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 16px;
+                            height: 15px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                        
+                        .modal-form-checkbox-icon {
+                            display: block;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: 0;
+                        }
+                        
+                        .modal-form-checkbox:checked+.modal-form-custom-checkbox {
+                            background-color: var(--accent-color);
+                            border: 1px solid var(--accent-color);
+                        }
+                        
+                        .modal-form-checkbox:checked+.modal-form-custom-checkbox .modal-form-checkbox-icon {
+                            opacity: 1;
+                            fill: var(--secondary-color);
+                        }
+                        
+                        .modal-form-option-label {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 30px;
+                        }
+                        
+                        .modal-form-link {
+                            text-decoration: underline;
+                            color: var(--accent-color);
+                        }
+                        
+                        .modal-form-checkbox {
+                            position: absolute;
+                            width: 1px;
+                            height: 1px;
+                            margin: -1px;
+                            border: 0;
+                            padding: 0;
+                            flex-shrink: 0;
+                            clip: rect(0 0 0 0);
+                            overflow: hidden;
+                            border-radius: 2px;
+                        }
+                        
+                        .modal-form-custom-checkbox {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 16px;
+                            height: 15px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            border: 2px solid var(--title-color);
+                        }
+                        
+                        .modal-form-checkbox-icon {
+                            display: block;
+                            align-items: center;
+                            justify-content: center;
+                            opacity: 0;
+                        }
+                        
+                        .modal-form-checkbox:checked+.modal-form-custom-checkbox {
+                            background-color: var(--accent-color);
+                            border: 1px solid var(--accent-color);
+                        }
+                        
+                        .modal-form-checkbox:checked+.modal-form-custom-checkbox .modal-form-checkbox-icon {
+                            opacity: 1;
+                            fill: var(--secondary-color);
+                        }
+                        
+                        .modal-form-option-label {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 30px;
+                        }
+                        
+                        .modal-form-link {
+                            text-decoration: underline;
+                            color: var(--accent-color);
+                        }
+                        
                         @media (max-width: 768px) {
                             .modal {
                                 width: 450px;
@@ -238,7 +346,10 @@
                         @media (max-width: 480px) {
                             .modal {
                                 width: 450px;
-                                height: 600px;
+                                height: 630px;
+                            }
+                            .request-form__policyLabel {
+                                font-size: 12px;
                             }
                         }
                         
@@ -261,7 +372,13 @@
                             }
                             .request-send-btn {
                                 width: 150px;
-                                margin-top: -20px;
-                                font-style: 13px;
+                                height: 40px;
+                                font-size: 12px;
+                            }
+                            .modal-field-comment {
+                                margin-bottom: 0;
+                            }
+                            .request-form__policyLabel {
+                                margin-left: 6px;
                             }
                         }

@@ -577,25 +577,28 @@
                     <label for="request-comment" class="request-label">Коментар</label>
                     <textarea name="request-comment" id="request-comment" placeholder="Введіть текст" class="request-comment"></textarea>
                 </div>
-                <div class="modal-field-policy">
-                    <input type="checkbox" name="policy" value="policy" id="policy" class="policy-checkbox visually-hidden" />
-                    <label for="policy" class="request-policy">
-                <span>
-                  <svg class="request-form__checkmark" width="16" height="15">
-                    <use href="./image/icons.svg#icon-icon-check"></use>
-                  </svg>
-                </span>
-                Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="policy"
-                  >Умови договору</a
-                ></label
-              >
-            </div>
-  
-            <button type="submit" class="request-send-btn">Відправити</button>
-          </form>
+
+
+                <div class="request-form__policy">
+                    <input type="checkbox" name="policy" value="policy" id="policy" class="request-form__checkbox visually-hidden" />
+                    <label for="policy" class="request-form__policyLabel">
+                      <span>
+                        <svg class="request-form__checkmark" width="1" height="15">
+                          <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                      </span>
+                      Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="request-form__policyLink"
+                        >Умови договору</a
+                      ></label
+                    >
+                  </div>
+
+                <button type="submit" class="request-send-btn">Відправити</button>
+            </form>
         </div>
-      </div>
-      <script src="./modal.js "></script>
+    </div>
+    <script src="./modal.js "></script>
     <script src="./menu.js "></script>
-    </body>
-  </html>
+</body>
+
+</html>
